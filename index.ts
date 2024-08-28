@@ -6,6 +6,7 @@ import swaggerDocs from "./src/utils/swagger";
 const app: Express = express();
 
 app.disable('x-powered-by');
+app.disable('etag');
 app.use(express.json());
 
 registerRouter(app);

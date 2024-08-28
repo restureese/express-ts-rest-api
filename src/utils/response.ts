@@ -1,5 +1,5 @@
 import type { Response } from "express"
-import type { ResponseSchema } from "@/models/response";
+import type { ResponseSchema } from "@/schemas/response";
 
 const unauthorizedResponse = (response: Response, message='Unauthorized') => {
     const responseBody: ResponseSchema = {

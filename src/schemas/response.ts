@@ -20,3 +20,12 @@
  *        errors:
  *          type: object
  */
+
+interface ResponseSchema {
+    status: number,
+    data: any,
+    message: string,
+    errors: any,
+}
+
+export type { ResponseSchema }

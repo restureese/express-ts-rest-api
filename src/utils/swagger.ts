@@ -6,7 +6,7 @@ import log from "./logger";
 
 const options: swaggerJsdoc.Options = {
   definition: {
-    openapi: "1.0.0",
+    openapi: "3.0.0",
     info: {
       title: "NGELOLA - Presensiku Docs",
       version,
