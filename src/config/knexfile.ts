@@ -13,6 +13,7 @@ const config: { [key: string]: Knex.Config } = {
         password: process.env.POSTGRESQL_PASSWORD || 'postgres',
         database: process.env.POSTGRESQL_DB || 'postgres',
     },
+    pool: { min: 10, max: 75 },
     migrations: {
       directory: "../database/migrations",
     },

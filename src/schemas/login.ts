@@ -12,7 +12,7 @@ import { object, string, type TypeOf } from "zod";
  *      properties:
  *        username:
  *          type: string
- *          default: jane.doe@example.com
+ *          default: user@example.com
  *        password:
  *          type: string
  *          default: password
@@ -23,7 +23,7 @@ const payload = {
       required_error: "Title is required",
     }),
     password: string({
-      required_error: "Title is required",
+      required_error: "Password is required",
     }),
 };
 
