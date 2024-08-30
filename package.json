@@ -4,8 +4,8 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun --hot run index.ts",
-    "start": "ts-node --esm ./index.ts",
+    "dev": "bun --hot run ./index.ts",
+    "start": "npm run ./index.ts",
     "make:migration": "node --loader ts-node/esm ./node_modules/.bin/knex --knexfile ./src/config/knexfile.ts migrate:make",
     "db:migrate": "node -r dotenv/config --loader ts-node/esm ./node_modules/.bin/knex --knexfile ./src/config/knexfile.ts migrate:latest",
     "make:seeder": "node --loader ts-node/esm ./node_modules/.bin/knex --knexfile ./src/config/knexfile.ts seed:make",
